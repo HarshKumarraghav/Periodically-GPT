@@ -1,0 +1,37 @@
+/* styles.css */
+.customLabel {
+  display: block;
+  font-size: 1.25rem; /* 20px */
+  font-weight: bold;
+  line-height: 1.75rem; /* 28px */
+  color: #d72048;
+  margin-bottom: 0.5rem; /* 8px */
+}
+.textAreaContainer {
+  margin-top: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.customTextarea {
+  display: block;
+  width: 90%;
+  border: 1px solid #d72048; /* border-gray-300 */
+  border-radius: 0.375rem; /* 6px */
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background-color: #222831;
+  color: white;
+  /* Focus state */
+  &:focus {
+    outline: none;
+    border-color: #d72048; /* focus:border-emerald-500 */
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2); /* focus:ring-emerald-500 */
+  }
+}
+.customTextarea::placeholder {
+  color: white;
+  text-transform: uppercase;
+}
