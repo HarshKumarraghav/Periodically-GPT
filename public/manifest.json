@@ -1,9 +1,10 @@
 {
-  "name": "This is my own extension",
-  "description": "Hellooo extension world",
-  "version": "1.0",
   "manifest_version": 3,
+  "name": "Periodically GPT",
+  "description": "Periodically GPT Extension",
+  "version": "1.0",
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": "./openai-avatar.png"
   }
 }

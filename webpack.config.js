@@ -20,9 +20,32 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env", "@babel/preset-react"],
+            presets: ["@babel/preset-env"],
+            plugins: [
+              [
+                "@babel/plugin-transform-react-jsx",
+                {
+                  pragma: "h",
+                  pragmaFrag: "Fragment",
+                },
+              ],
+            ],
           },
         },
+      },
+      {
+        test: /\.css$/i,
+        use: ["style-loader", "css-loader", "postcss-loader"],
+      },
+      {
+        test: /\.(jpg|png|gif|svg|woff|ttf|eot)$/,
+        use: {
+          loader: "url-loader",
+        },
+      },
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: "asset/resource",
       },
     ],
   },
@@ -31,7 +54,7 @@ module.exports = {
       patterns: [{ from: "public" }],
     }),
     new HtmlWebpackPlugin({
-      template: "./template.html",
+      template: "./src/template.html",
       filename: "popup.html",
       chunks: ["popup"],
     }),

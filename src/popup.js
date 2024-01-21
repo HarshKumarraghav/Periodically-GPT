@@ -1,3 +1,4 @@
-import { render } from "preact/compat";
-
-render(<div>Hello world</div>, document.getElementById("app"));
+import { render, h } from "preact";
+import App from "./App";
+import "./style.css";
+render(<App />, document.getElementById("app"));
