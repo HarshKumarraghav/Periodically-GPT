@@ -1,6 +1,7 @@
 import { h } from "preact";
 import Container from "./components/Container";
 import Header from "./components/Header";
+import Button from "./components/Button";
 
 const App = () => {
   return (
@@ -11,6 +12,7 @@ const App = () => {
         alt="banner for periodically"
         className="banner"
       />
+      <Button />
       <div className="bg">
         <div className="para">This is my extension in preact</div>
       </div>

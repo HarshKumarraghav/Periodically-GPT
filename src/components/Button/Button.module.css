@@ -1,28 +1,25 @@
-/* styles.css */
+.ButtonContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8px;
+}
 .customButton {
+  width: 95%;
+  height: 40px;
   display: inline-flex;
   align-items: center;
-  border-radius: 0.375rem; /* 6px */
-  border: 1px solid #d72048; /* emerald-300 */
-  background-color: #d72048; /* emerald-500 */
-  padding: 0.75rem 1.125rem; /* 12px 18px */
-  font-size: 0.875rem; /* 14px */
+  border-radius: 0.375rem;
+  border: 1px solid #d72048;
+  background-color: #d72048;
+  padding: 0.75rem 1.125rem;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
-  line-height: 1.25rem; /* 20px */
   color: #ffffff; /* white */
   box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
   transition: background-color 0.3s, color 0.3s;
-
-  /* Hover state */
-  &:hover {
-    background-color: #ecfdf5; /* hover:bg-emerald-50 */
-    color: #d72048; /* hover:text-emerald-500 */
-  }
-
-  /* Focus state */
-  &:focus {
-    outline: none;
-    ring: 2px solid #d72048; /* focus:ring-emerald-500 */
-    ring-offset: 2px; /* focus:ring-offset-2 */
-  }
 }
