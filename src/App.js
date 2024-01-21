@@ -3,6 +3,7 @@ import Container from "./components/Container";
 import Header from "./components/Header";
 import Button from "./components/Button";
 import TextArea from "./components/TextArea";
+import Seprator from "./components/Seprator";
 
 const App = () => {
   return (
@@ -15,9 +16,7 @@ const App = () => {
       />
       <TextArea />
       <Button />
-      <div className="bg">
-        <div className="para">This is my extension in preact</div>
-      </div>
+      <Seprator />
     </Container>
   );
 };

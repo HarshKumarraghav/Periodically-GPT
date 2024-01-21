@@ -20,7 +20,7 @@
   width: 90%;
   border: 1px solid #d72048; /* border-gray-300 */
   border-radius: 0.375rem; /* 6px */
-  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* shadow-sm */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: border-color 0.3s, box-shadow 0.3s;
   background-color: #222831;
   color: white;
