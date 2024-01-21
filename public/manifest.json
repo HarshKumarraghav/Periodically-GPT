@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Periodically GPT",
-  "description": "Periodically GPT Extension",
-  "version": "1.0",
+  "version": "1.1.1",
+  "description": "A chatbot powered by GPT technology to provide information and answer questions related to the periodic table of elements.",
   "action": {
     "default_popup": "popup.html",
     "default_icon": "./Periodically.png"
