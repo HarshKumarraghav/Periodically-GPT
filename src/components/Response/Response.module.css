@@ -1,0 +1,14 @@
+.responseContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px;
+}
+
+.responsePara {
+  width: 90%;
+  font-size: 18px;
+  font-weight: 500;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 8px;
+}

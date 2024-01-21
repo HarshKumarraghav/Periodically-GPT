@@ -1,5 +1,13 @@
 /* styles.css */
+.loaderContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .customLoader {
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,7 +16,6 @@
   font-size: 0.875rem; /* 14px */
   line-height: 1.25rem; /* 20px */
   text-align: center;
-  box-shadow: 0 2px 4px 0 rgba(16, 185, 129, 0.1); /* shadow */
   transition: background-color 0.3s, color 0.3s;
   cursor: not-allowed;
   color: #d72048;
