@@ -1,0 +1,36 @@
+/* styles.css */
+.customLoader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem; /* 8px 16px */
+  font-weight: 600;
+  font-size: 0.875rem; /* 14px */
+  line-height: 1.25rem; /* 20px */
+  text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(16, 185, 129, 0.1); /* shadow */
+  transition: background-color 0.3s, color 0.3s;
+  cursor: not-allowed;
+  color: #d72048;
+}
+
+.customSpin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.customOpacity25 {
+  opacity: 0.25;
+}
+
+.customOpacity75 {
+  opacity: 0.75;
+}
